@@ -90,8 +90,7 @@
 	const main = async function () {
 		setStyle();
 
-		await $.getScript('https://cdn.jsdelivr.net/gh/uzairfarooq/arrive@v2.4.1/minified/arrive.min.js');
-		$('div#discussion').arrive('div.foto[data-vizitka]', {existing: true}, fotoCallback);
+		$('div#discussion').find('div.foto[data-vizitka]').each((_, fotoDiv) => fotoCallback(fotoDiv));
 	};
 
 	main();
