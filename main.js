@@ -36,6 +36,7 @@
 	};
 
 	const isDummyFoto = async function (imgUrl) {
+		// TODO: cache in local storage
 		const imgData = await fetchRaw(imgUrl);
 		const imgHash = await crypto.subtle.digest('SHA-256', imgData);
 		return arrayEqual(imgHash, dummyPhotoHashQ) || arrayEqual(imgHash, dummyPhotoHashX);
