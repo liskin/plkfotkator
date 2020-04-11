@@ -12,8 +12,12 @@
 		return response.arrayBuffer();
 	};
 
-	const dummyPhotoHash = new Int32Array(
+	const dummyPhotoHashQ = new Int32Array(
 		[964187606, 488554096, -870350548, 472781212, 1943860014, 704953838, 2044389021, 107628121]
+	);
+
+	const dummyPhotoHashX = new Int32Array(
+		[611287218, 603312897, 1091126894, 1620666705, 741685090, -1196905154, -1942782605, -1239619627]
 	);
 
 	const arrayEqual = function (a1, a2) {
@@ -34,7 +38,7 @@
 	const isDummyFoto = async function (imgUrl) {
 		const imgData = await fetchRaw(imgUrl);
 		const imgHash = await crypto.subtle.digest('SHA-256', imgData);
-		return arrayEqual(imgHash, dummyPhotoHash);
+		return arrayEqual(imgHash, dummyPhotoHashQ) || arrayEqual(imgHash, dummyPhotoHashX);
 	};
 
 	const getInitials = function (fotoDiv) {
