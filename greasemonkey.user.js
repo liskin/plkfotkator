@@ -4,4 +4,4 @@
 // @downloadURL https://cdn.jsdelivr.net/gh/liskin/plkfotkator@master/greasemonkey.user.js
 // ==/UserScript==
 
-$('body').append($("<script src='https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.1/main.js'></script>"));
+$('body').append($("<script src='https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/main.js'></script>"));
