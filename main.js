@@ -92,7 +92,6 @@
 
 		await $.getScript('https://cdn.jsdelivr.net/gh/uzairfarooq/arrive@v2.4.1/minified/arrive.min.js');
 		$('div#discussion').arrive('div.foto[data-vizitka]', {existing: true}, fotoCallback);
-		Arrive.unbindAllArrive();
 	};
 
 	main();
