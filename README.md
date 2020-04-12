@@ -2,7 +2,9 @@
 
 ## Instalace
 
-- [GreaseMonkey/ViolentMonkey](https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/greasemonkey.user.js)
+- [user script](https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/greasemonkey.user.js)
+  ([ViolentMonkey](https://violentmonkey.github.io/get-it/),
+  [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/))
 
 ## Bookmarklet
 
