@@ -1,5 +1,11 @@
 # PlkFotkátor
 
+![2020-04-12-162721_435x140_scrot](https://user-images.githubusercontent.com/300342/79071397-d0252a00-7cdb-11ea-884d-7da328fcf0e8.png)
+
+→
+
+![2020-04-12-162740_463x138_scrot](https://user-images.githubusercontent.com/300342/79071398-d3b8b100-7cdb-11ea-89ee-f59b058a1a99.png)
+
 ## Instalace
 
 - [user script](https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/greasemonkey.user.js)
