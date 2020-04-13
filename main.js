@@ -1,4 +1,8 @@
 {
+	const baseUrl = document.currentScript.src.match("^[a-z-]+://.*/");
+	if (!baseUrl)
+		throw new Error("cannot get baseUrl");
+
 	const parseBackgroundImage = function (value) {
 		const m = value.match(/^url\(["']?([^"']*)["']?\)$/);
 		return m ? m[1] : null;
@@ -42,6 +46,20 @@
 		return arrayEqual(imgHash, dummyPhotoHashQ) || arrayEqual(imgHash, dummyPhotoHashX);
 	};
 
+	const getReplacementFoto = async function (fotoDiv) {
+		const uco = fotoDiv.data('vizitka');
+		if (! /^\d+$/.test(uco))
+			return null;
+
+		const fotoUrl = `${baseUrl}foto/${uco}.jpg`;
+		try {
+			const fotoResponse = await fetch(fotoUrl);
+			return fotoResponse.ok ? fotoUrl : null;
+		} catch (e) {
+			return null;
+		}
+	};
+
 	const getInitials = function (fotoDiv) {
 		const name = fotoDiv.closest('.prispevek').children('.obsah').find('.autor .df_autor_jmeno span[data-vizitka]').text();
 		if (!name)
@@ -63,8 +81,11 @@
 
 		const imgUrl = parseBackgroundImage(fotoDiv.css('background-image'));
 		if (imgUrl && await isDummyFoto(imgUrl)) {
-			// TODO: implement known photo replacements
-			addInitials(fotoDiv);
+			const replacementFotoUrl = await getReplacementFoto(fotoDiv);
+			if (replacementFotoUrl)
+				fotoDiv.css('background-image', `url("${replacementFotoUrl}")`);
+			else
+				addInitials(fotoDiv);
 		}
 	};
 
