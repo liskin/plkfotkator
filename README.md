@@ -6,7 +6,7 @@
 
 ![2020-04-12-162740_463x138_scrot](https://user-images.githubusercontent.com/300342/79071398-d3b8b100-7cdb-11ea-89ee-f59b058a1a99.png)
 
-Viz také [Adresář pro náhradní fotky](foto/README.md).
+Viz také [Adresář pro náhradní fotky](foto/).
 
 ## Instalace
 
