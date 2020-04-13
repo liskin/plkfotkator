@@ -8,6 +8,8 @@
 
 ## Instalace
 
+- [Chrome extension,
+  unpacked](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension)
 - [user script](https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/greasemonkey.user.js)
   ([ViolentMonkey](https://violentmonkey.github.io/get-it/),
   [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/))

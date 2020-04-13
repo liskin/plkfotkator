@@ -1,0 +1,24 @@
+{
+	"name": "plkfotkator",
+	"version": "0.2",
+	"manifest_version": 2,
+	"homepage_url": "https://github.com/liskin/plkfotkator",
+	"icons": {
+		"128": "icons/icon128.png"
+	},
+	"permissions": ["https://is.muni.cz/auth/discussion/*"],
+	"content_scripts": [
+		{
+			"matches": ["https://is.muni.cz/auth/discussion/*"],
+			"js": ["inject.js"]
+		}
+	],
+	"web_accessible_resources": [
+		"main.js"
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "plkfotkator@lisk.in"
+		}
+	}
+}
