@@ -12,10 +12,10 @@ Viz také [Adresář pro náhradní fotky](foto/README.md).
 
 - [Chrome extension,
   unpacked](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension)
-- [user script](https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/greasemonkey.user.js)
+- [user script](https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.3/greasemonkey.user.js)
   ([ViolentMonkey](https://violentmonkey.github.io/get-it/),
   [GreaseMonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/))
 
 ## Bookmarklet
 
-    javascript:$('body').append($("<script src='https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.2/main.js'></script>"));void(0);
+    javascript:$('body').append($("<script src='https://cdn.jsdelivr.net/gh/liskin/plkfotkator@v0.3/main.js'></script>"));void(0);
